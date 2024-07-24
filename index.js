@@ -27,11 +27,11 @@ function isEqual(...str) {
 }
 
 function errorFun() {
-  return a;
+  throw new Error("Error")
 }
 
 try {
-    errorFun()
+  errorFun();
 } catch (error) {
-    console.log('error :>> ', error);
+  console.log("error :>> ", error);
 }
